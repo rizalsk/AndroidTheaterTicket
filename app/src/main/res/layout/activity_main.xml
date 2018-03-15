@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bp"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/bg1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:cropToPadding="true"
+                android:padding="4dp"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    style="@style/TextTitle"
+                    android:layout_weight="1"
+                    android:text="Judul Film"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner_judul_film"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/TextTitle"
+                    android:text="Kelas"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_kelas"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/TextTitle"
+                    android:text="Include Popcorn \u0026 Minuman?"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_include"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:autofillHints="test"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Jumlah"
+                    style="@style/TextTitle"
+                    />
+
+                <EditText
+                    android:id="@+id/text_jumlah"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="1 - 5"
+                    />
+
+                <Button
+                    android:id="@+id/tombol_book"
+                    android:layout_weight="1"
+                    android:text="book ticket"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:drawableRight="@drawable/touch_icon"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorPrimary"
+                    android:textCursorDrawable="@drawable/touch_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="bookTicket"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

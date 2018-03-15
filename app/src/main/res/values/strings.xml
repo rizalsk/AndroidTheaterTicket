@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Zinemax Dewata</string>
+    <string-array name="kelas">
+        <item>REGULAR</item>
+        <item>EXECUTIVE</item>
+    </string-array>
+    <string-array name="include">
+        <item>No</item>
+        <item>Popcorn + Minuman</item>
+    </string-array>
+    <string name="send_to">Kirim ke</string>
+
+</resources>
